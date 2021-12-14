@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.work.controller.segment.SegmentTableController">
+   <children>
+      <ImageView fitHeight="751.0" fitWidth="900.0">
+         <image>
+            <Image url="@../../../images/1625501177_19-kartinkin-com-p-fon-dlya-proekta-po-informatike-krasivie-f-19.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="18.0" layoutY="14.0" opacity="0.65" prefHeight="67.0" prefWidth="864.0" style="-fx-background-color: black; -fx-background-radius: 5;" />
+      <Button layoutX="773.0" layoutY="678.0" mnemonicParsing="false" onAction="#goBack" prefHeight="52.0" prefWidth="109.0" style="-fx-background-color: white;" text="Меню">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="678.0" layoutY="524.0" mnemonicParsing="false" onAction="#actionButtonPressed" opacity="0.9" prefHeight="51.0" prefWidth="161.0" style="-fx-background-color: white;" text="Удалить" textAlignment="CENTER" textFill="#4e4e4e" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnChange" layoutX="356.0" layoutY="524.0" mnemonicParsing="false" onAction="#actionButtonPressed" opacity="0.9" prefHeight="51.0" prefWidth="186.0" style="-fx-background-color: white;" text="Изменить" textAlignment="CENTER" textFill="#4e4e4e" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelMain" alignment="CENTER" layoutX="90.0" layoutY="30.0" prefHeight="36.0" prefWidth="763.0" text="Направление и описание проекта" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="58.0" layoutY="113.0" minWidth="575.0" prefHeight="378.0" prefWidth="782.0">
+         <columns>
+            <TableColumn fx:id="columnName" maxWidth="5000.0" minWidth="10.0" prefWidth="781.6000045776367" text="Инфо" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnAddNew" layoutX="58.0" layoutY="524.0" mnemonicParsing="false" onAction="#actionButtonPressed" opacity="0.9" prefHeight="51.0" prefWidth="186.0" style="-fx-background-color: white;" text="Добавить" textAlignment="CENTER" textFill="#4e4e4e" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
